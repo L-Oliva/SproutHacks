@@ -53,7 +53,7 @@ def generate_content():
         entries = list(collection.find({}, {"_id": 0, "content": 1}))  # Get only the content field
         prompt = " ".join(entry["content"] for entry in entries)  # Concatenate all content
 
-        client = genai.Client(api_key="AIzaSyAY3WO0A8XzaJs8CT0VXkDsyuxlyYoE1LM")
+        client = genai.Client(api_key="")
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=[prompt + " You are telling your patient about your observations about their mental health based on their previous journal entries.Just tell them your observations there will be no more contact with your patient. 350 words or less"],
