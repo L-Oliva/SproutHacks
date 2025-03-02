@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a202c;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 16px;
+  border-right: 1px solid #4a5568;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.sidebar li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #2d3748;
+}
+
+.main-content {
+  width: 75%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.editable-div {
+  width: 100%;
+  max-width: 600px;
+  height: 50%;
+  padding: 8px;
+  border: 1px solid #4a5568;
+  background-color: #2d3748;
+  color: #ffffff;
+  resize: none;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+.output-div {
+  background-color: #2d3748;
+  padding: 15px;
+  border-radius: 10px;
+}
+.display-div {
+  padding: 16px;
+  margin-top: 16px;
+  border: 1px solid #4a5568;
+  background-color: #2d3748;
+  width: 100%;
+  max-width: 600px;
+  flex-grow: 1;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4a5568;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.submit-button {
+  margin-top: 16px;
+  background-color: #3182ce;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #2b6cb0;
+}
+
+.analysis-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.analysis-button:hover {
+  background-color: #2b6cb0;
+}
+
+.go-back-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.go-back-button:hover {
+  background-color: #2b6cb0;
+}
+
